@@ -1,21 +1,22 @@
 import React from "react";
+import { ButtonOPstyle } from "./styles"
 
 interface Props {
-  onClick_function: any; 
+  onClick_function: any;
   title: string;
 }
 
-interface State {}
+interface State { }
 
 export class ButtonOp extends React.Component<Props, State> {
-  constructor(props: Props){
+  constructor(props: Props) {
     super(props)
     this.state = {}
   }
 
   render() {
     return (
-      <button onClick={this.props.onClick_function}>{this.props.title}</button>
+      <ButtonOPstyle onClick={this.props.onClick_function}>{this.props.title}</ButtonOPstyle>
     );
   }
 }
